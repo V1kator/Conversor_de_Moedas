@@ -16,6 +16,8 @@ int moedaescolhida;
 Console.WriteLine("Insira o Valor em Reais (R$): ");
 valorreal = double.Parse(Console.ReadLine());
 
+Console.Clear();
+
 Console.WriteLine("Informe");
 Console.WriteLine("1 - Para Dolar");
 Console.WriteLine("2 - Para Euro");
@@ -23,6 +25,7 @@ Console.WriteLine("3 - Para Ienes");
 moedaescolhida = int.Parse(Console.ReadLine());
 ObterCotacao(moedaescolhida);
 
+Console.Clear();
 static async Task<double> ObterCotacao(int moeda)
 {
     using (var httpClient = new HttpClient())

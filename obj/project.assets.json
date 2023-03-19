@@ -85,11 +85,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desktop\\Teste\\C#\\Conversos_de_Moedas_Csharp-main\\Conversor_de_moedas.csproj",
+      "projectUniqueName": "D:\\Desktop\\Teste\\C#\\Conversos_de_Moedas_Csharp\\Conversor_de_moedas.csproj",
       "projectName": "Conversor_de_moedas",
-      "projectPath": "D:\\Desktop\\Teste\\C#\\Conversos_de_Moedas_Csharp-main\\Conversor_de_moedas.csproj",
+      "projectPath": "D:\\Desktop\\Teste\\C#\\Conversos_de_Moedas_Csharp\\Conversor_de_moedas.csproj",
       "packagesPath": "C:\\Users\\Gud Gud\\.nuget\\packages\\",
-      "outputPath": "D:\\Desktop\\Teste\\C#\\Conversos_de_Moedas_Csharp-main\\obj\\",
+      "outputPath": "D:\\Desktop\\Teste\\C#\\Conversos_de_Moedas_Csharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Gud Gud\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+h75LopEoZlPZq1uq3e+o8X/1X2ZWpKFCVExdvjgPtU3VU4KxlvlrAuzpwD6Cw64BLwDAaCmYSfwLR3/ry8qJA==",
+  "dgSpecHash": "fkDPuwniBLivcwr+MiH/RcmNNWm4+8GV+I9a1j1oh44Mf8i121oXVgDnbXNEV5tLZZV95//W1JdyO4o93Kh5qw==",
   "success": true,
-  "projectFilePath": "D:\\Desktop\\Teste\\C#\\Conversos_de_Moedas_Csharp-main\\Conversor_de_moedas.csproj",
+  "projectFilePath": "D:\\Desktop\\Teste\\C#\\Conversos_de_Moedas_Csharp\\Conversor_de_moedas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gud Gud\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
     "C:\\Users\\Gud Gud\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
