@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Reflection.Metadata;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using System.Threading;
 
 double valorreal = 0, valoroutramoeda = 0, cotacaooutramoeda;
 int moedaescolhida;
@@ -24,6 +25,17 @@ Console.WriteLine("2 - Para Euro");
 Console.WriteLine("3 - Para Ienes");
 moedaescolhida = int.Parse(Console.ReadLine());
 ObterCotacao(moedaescolhida);
+
+Console.Clear();
+
+Console.Write("Aguarde");
+for(int i = 0; i < 5; i++)
+{
+    Console.Write(".");
+    Thread.Sleep(1000);
+}
+
+Console.WriteLine();
 
 Console.Clear();
 static async Task<double> ObterCotacao(int moeda)
@@ -43,8 +55,6 @@ static async Task<double> ObterCotacao(int moeda)
             case 3:
                 url = "https://economia.awesomeapi.com.br/JPY-BRL";
                 break;
-            default:
-                throw new Exception("Tipo de moeda inválido");
         }
 
         var response = await httpClient.GetAsync(url);
