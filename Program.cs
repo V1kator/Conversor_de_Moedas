@@ -11,8 +11,7 @@ using Newtonsoft.Json;
 using System.Threading;
 
 double valorreal = 0, valoroutramoeda = 0, cotacaooutramoeda;
-int moedaescolhida;
-string continuar = "1";
+string moedaescolhida, continuar = "1";
 
 while(continuar == "1")
 {
@@ -25,7 +24,7 @@ while(continuar == "1")
     Console.WriteLine("1 - Para Dolar");
     Console.WriteLine("2 - Para Euro");
     Console.WriteLine("3 - Para Ienes");
-    moedaescolhida = int.Parse(Console.ReadLine());
+    moedaescolhida = Console.ReadLine();
     ObterCotacao(moedaescolhida);
 
     Console.Clear();
@@ -40,7 +39,7 @@ while(continuar == "1")
     Console.WriteLine();
 
     Console.Clear();
-    static async Task<double> ObterCotacao(int moeda)
+    static async Task<double> ObterCotacao(string moeda)
     {
         using (var httpClient = new HttpClient())
         {
@@ -48,13 +47,13 @@ while(continuar == "1")
 
             switch (moeda)
             {
-                case 1:
+                case "1":
                     url = "https://economia.awesomeapi.com.br/USD-BRL";
                     break;
-                case 2:
+                case "2":
                     url = "https://economia.awesomeapi.com.br/EUR-BRL";
                     break;
-                case 3:
+                case "3":
                     url = "https://economia.awesomeapi.com.br/JPY-BRL";
                     break;
             }
@@ -71,17 +70,17 @@ while(continuar == "1")
 
     switch (moedaescolhida)
     {
-        case 1:
+        case "1":
             cotacaooutramoeda = await ObterCotacao(moedaescolhida);
             valoroutramoeda = valorreal / cotacaooutramoeda;
             Console.WriteLine(valorreal + "R$ Em Dólares é: " + valoroutramoeda);
             break;
-        case 2:
+        case "2":
             cotacaooutramoeda = await ObterCotacao(moedaescolhida);
             valoroutramoeda = valorreal / cotacaooutramoeda;
             Console.WriteLine(valorreal + "R$ Em Euro é: " + valoroutramoeda);
             break;
-        case 3:
+        case "3":
             cotacaooutramoeda = await ObterCotacao(moedaescolhida);
             valoroutramoeda = valorreal / cotacaooutramoeda;
             Console.WriteLine(valorreal + "R$ Em Ienes é: " + valoroutramoeda);
